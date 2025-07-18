@@ -20,13 +20,11 @@ def count_nt(dna_file):
         d_string = list(d.read())
         for i in set(d_string):
             nt_dict[i] = d_string.count(i)
-        
-        nt_dict_sorted = dict(sorted(nt_dict.items(), key=lambda x:x[0].lower()))        
 
-        A = nt_dict_sorted['A']
-        C = nt_dict_sorted['C']
-        G = nt_dict_sorted['G']
-        T = nt_dict_sorted['T']
+        A = nt_dict['A']
+        C = nt_dict['C']
+        G = nt_dict['G']
+        T = nt_dict['T']
 
         return print(f"{A} {C} {G} {T}")
 
