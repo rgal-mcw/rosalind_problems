@@ -20,7 +20,7 @@ test_fasta = "./datasets/rosalind_cons.txt"
 
 def get_fasta_matrix(fasta):
     with open(fasta) as f:
-        fa = f.read().split() ## THIS DOES NOT WORK FOR READS LONGER THAN A LINES LENGTH. READS GO UNTIL NEXT '>'
+        fa = f.read().split() 
         seq = list()
         read = ""
         for line in fa:
