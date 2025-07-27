@@ -18,7 +18,8 @@ RNA_codon_table = {
 'T': ('ACU', 'ACC', 'ACA', 'ACG'),
 'V': ('GUU', 'GUC', 'GUA', 'GUG'),
 'W': ('UGG',),
-'Y': ('UAU', 'UAC'),}
+'Y': ('UAU', 'UAC'),
+'STOP': ('UAA', 'UAG', 'UGA')}
 
 def rna_codon_table():
     return RNA_codon_table
